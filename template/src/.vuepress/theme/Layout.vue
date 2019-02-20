@@ -109,7 +109,6 @@ function updateMetaTags(meta, current) {
 }
 
 function bodyInsertSVGSprite(string) {
-  console.log(SVGSprite)
   const svgIcons = document.createElement('div')
   svgIcons.id = 'preload-svg'
   svgIcons.innerHTML = string
