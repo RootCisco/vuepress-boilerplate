@@ -1,4 +1,4 @@
-# vuepress(v0.x系) boilerplate
+# vuepress(v0.x) boilerplate
 > vuepress starter template for web site.
 
 ## Usage
