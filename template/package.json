@@ -7,7 +7,7 @@
     "svgsprite": "./scripts/create_svgsprite.sh",
     "htmlbeautify": "./scripts/html_beautify.sh",
     "dev": "vuepress dev src",
-    "build": "vuepress build src",
+    "build": "vuepress build src && yarn htmlbeautify",
     "preview": "http-server ./build/"
   },
   "author": "{{ author }}",
