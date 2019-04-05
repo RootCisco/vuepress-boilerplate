@@ -3,7 +3,7 @@ vuepress-v0.x系を使った、静的サイトをつくるときのテンプレ�
 
 ## Infomation
       node v10.14.2
-      vuepress v0.14.8
+      vuepress v0.14.10
       vuex v3.0.1
       pug v2.0.3
 
@@ -12,7 +12,7 @@ vuepress-v0.x系を使った、静的サイトをつくるときのテンプレ�
 - autoplefixer and preset-env targets browsers are described in package.json's browserslist.
 
 ## Require
-- yarn
+- yarn v1.15.2
 
 ## Get strated
       yarn install

@@ -3,7 +3,7 @@
 
 ## Usage
       $ yarn global add @vue/cli
-      $ vue init RootCisco/vuepress-boilerplate my-project
-      $ cd my-project
+      $ vue init RootCisco/vuepress-boilerplate {my_project_name}
+      $ cd {my_project_name}
       $ yarn install
       $ yarn dev

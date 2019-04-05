@@ -1,7 +1,7 @@
 {
-  "name": "{{ name }}",
+  "name": "vuepress_theme",
   "version": "1.0.0",
-  "description": "{{ description }}",
+  "description": "vuepress development environment",
   "scripts": {
     "lint": "eslint --ext .js,.vue src --fix",
     "svgsprite": "./scripts/create_svgsprite.sh",
@@ -10,14 +10,14 @@
     "build": "vuepress build src && yarn htmlbeautify",
     "preview": "http-server ./build/"
   },
-  "author": "{{ author }}",
+  "author": "RootCisco",
   "license": "MIT",
   "dependencies": {
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
     "ress": "^1.2.2",
-    "vuepress": "^0.14.9",
-    "vuex": "^3.0.1",
+    "vuepress": "^0.14.10",
+    "vuex": "^3.1.0",
     "webpack-glsl-loader": "^1.0.1"
   },
   "devDependencies": {
