@@ -7,9 +7,9 @@
 
 <script>
 import Vue from 'vue'
-import SVGSprite from '@assets/svg/sprite.svg'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import SVGSprite from '@assets/svg/sprite.svg'
 
 export default {
   components: {
@@ -47,22 +47,18 @@ export default {
       }
     }
   },
-
   data() {
     return {}
   },
-
   created() {
     if (this.$ssrContext) {
-      this.$ssrContext.lang = this.$lang
       this.$ssrContext.title = this.$title
+      this.$ssrContext.lang = this.$lang
       this.$ssrContext.description = this.$page.description || this.$description
-
       const localeHeadTags = (this.$localeConfig.head || []).map(this.renderHeadTag).join('\n ')
       this.$ssrContext.userHeadTags = `${this.$ssrContext.userHeadTags}\n ${localeHeadTags}`
     }
   },
-
   mounted() {
     // update title / meta tags
     this.currentMetaTags = []
@@ -84,7 +80,6 @@ export default {
     // body insert svg sprite
     bodyInsertSVGSprite(SVGSprite)
   },
-
   beforeDestroy() {
     updateMetaTags(null, this.currentMetaTags)
   }
