@@ -1,8 +1,12 @@
-# vuepress(v0.x) boilerplate
+# vuepress(v1.x) boilerplate
 > vuepress starter template for web site.
 
+## Preparation
+vue-cliを使ってダウンロードできるようになっているのでもしなかったらグローバルインストールしてください。
+
+      $ npm i -g @vue/cli @vue/cli-init
+
 ## Usage
-      $ yarn global add @vue/cli
       $ vue init RootCisco/vuepress-boilerplate {my_project_name}
       $ cd {my_project_name}
       $ yarn install

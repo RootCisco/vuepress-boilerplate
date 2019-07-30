@@ -7,6 +7,9 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": true
   },
+  "[stylus]": {
+    "editor.formatOnSave": true
+  },
   "eslint.validate": [
     "javascript",
     "javascriptreact",

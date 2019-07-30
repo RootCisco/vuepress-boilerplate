@@ -10,8 +10,9 @@ module.exports = {
   dest: 'build',
   head: [
     ['meta', { name: 'keywords', content: 'vue, vuepress' }],
-    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0' }],
-    ['meta', { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' }]
+    ['meta', { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' }],
+    ['link', { rel: 'shortcut icon', type: 'image/x-icon', href: './favicon.ico' }],
+    ['link', { rel: 'apple-touch-icon-precomposed', href: './apple-touch-icon.png' }]
   ],
   locales: {
     '/': {
@@ -60,7 +61,7 @@ module.exports = {
   stylus: {
     import: [path.resolve(__dirname, './styles/global.styl')]
   },
-  ga: 'TEST_ID_20181213',
+  plugins: [['@vuepress/google-analytics', { ga: 'UA-00000000-0' }]],
   configureWebpack: (config, isServer) => {
     config.resolve.alias['@components'] = path.resolve(__dirname, './components')
     config.resolve.alias['@public'] = path.resolve(__dirname, './public')
@@ -71,7 +72,7 @@ module.exports = {
         new TerserPlugin({
           parallel: true,
           terserOptions: {
-            ecma: 6,
+            ecma: 5,
             compress: {
               warnings: false,
               drop_console: true
@@ -82,7 +83,8 @@ module.exports = {
             output: {
               beautify: false,
               comments: /^\**!|@preserve|@license|@cc_on|LICENSE|License|license/
-            }
+            },
+            ie8: true
           }
         })
       ]
