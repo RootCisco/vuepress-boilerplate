@@ -15,5 +15,5 @@ module.exports = {
       message: 'Author'
     },
   },
-  skipInterpolation: 'src/**/*.vue'
+  skipInterpolation: ['src/**/*.vue', 'src/.vuepress/templates/*.html']
 }
