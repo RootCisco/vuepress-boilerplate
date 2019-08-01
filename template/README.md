@@ -1,20 +1,21 @@
-# VuePress Theme - vupress v0.x
-vuepress-v0.x系を使った、静的サイトをつくるときのテンプレート。
+# VuePress Theme - vupress v1.x
+vuepress v1.x系を使った、静的サイトをつくるときのテンプレート。
 
 ## Infomation
-      node v10.14.2
-      vuepress v0.14.10
-      vuex v3.0.1
-      pug v2.0.3
+      node >= v8.
+      vuepress v1.0.3
+      vuex v3.1.1
+      pug v2.0.4
 
 - use webpaclk-glsl-loader.
 - use ress.css (modern reset css).
+- use prettier and eslint (vue, js, stylus code format).
 - autoplefixer and preset-env targets browsers are described in package.json's browserslist.
 
 ## Require
-- yarn v1.15.2
+- yarn v1.17.3
 
 ## Get strated
       yarn install
-      yarn build  // productionビルド
-      yarn dev  // localhost:3000立ち上げ
+      yarn build  // production build
+      yarn dev  // open localhost:3000
