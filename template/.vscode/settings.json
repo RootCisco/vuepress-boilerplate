@@ -19,9 +19,23 @@
     }
   ],
   "eslint.autoFixOnSave": true,
-  "prettier.eslintIntegration": true,
   "stylusSupremacy.insertBraces": false,
   "stylusSupremacy.insertSemicolons": false,
   "javascript.format.enable": false,
-  "vetur.format.defaultFormatter.js": "prettier-eslint"
+  "vetur.format.defaultFormatter.js": "prettier-eslint",
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "force-expand-multiline"
+    },
+    "prettyhtml": {
+      "printWidth": 100,
+      "singleQuote": false,
+      "wrapAttributes": false,
+      "sortAttributes": false
+    },
+    "prettier": {
+      "semi": false,
+      "singleQuote": true
+    }
+  }
 }
