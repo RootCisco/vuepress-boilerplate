@@ -19,6 +19,7 @@
     }
   ],
   "eslint.autoFixOnSave": true,
+  "prettier.eslintIntegration": true,
   "stylusSupremacy.insertBraces": false,
   "stylusSupremacy.insertSemicolons": false,
   "javascript.format.enable": false,
