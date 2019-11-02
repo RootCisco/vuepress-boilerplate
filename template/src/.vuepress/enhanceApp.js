@@ -1,34 +1,22 @@
-import Vuex from 'vuex'
+import store from './enhance-files/store'
+import setRouter from './enhance-files/router'
+// import axios from 'axios'
+
+// const baseUrl = 'http://localhost:1337/tests'
+// const axiosConfig = {
+//   baseUrl: baseUrl,
+//   headers: { 'Content-Type': 'application/json' },
+//   responseType: 'json'
+// }
+// const axiosBase = () => {
+//   const api = axios.create(axiosConfig)
+//   return api
+// }
 
 export default ({ Vue, options, router, siteData }) => {
-  Vue.use(Vuex)
+  // Vue.prototype.$http = axiosBase()
 
-  const state = {
-    currentLang: 'jp'
-  }
-
-  const modules = {}
-
-  const mutations = {
-    changeLang(state, lang) {
-      state.currentLang = lang
-    }
-  }
-
-  const actions = {
-    changeLang({ commit }, path) {
-      const lang = path === '/' ? 'jp' : 'en'
-      commit('changeLang', lang)
-    }
-  }
-
-  const store = new Vuex.Store({ state, modules, mutations, actions })
   Vue.mixin({ store: store })
 
-  async function afterEach(to, from, next) {
-    store.dispatch('changeLang', to.path)
-    await router.app.$nextTick()
-  }
-
-  router.afterEach(afterEach)
+  setRouter(router)
 }
