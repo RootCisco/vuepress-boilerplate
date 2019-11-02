@@ -2,7 +2,13 @@ const path = require('path')
 const webpack = require('webpack')
 const TerserPlugin = require('terser-webpack-plugin')
 
+const sitePath = 'http://localhost:3000'
+// const seoOptions = require('./config-files/seo-options')
+
 module.exports = {
+  themeConfig: {
+    domain: sitePath
+  },
   base: '/',
   title: 'はじめてのVuePress',
   description: 'VuePressを使用したサイトです。',
@@ -11,41 +17,13 @@ module.exports = {
   head: [
     ['meta', { name: 'keywords', content: 'vue, vuepress' }],
     ['meta', { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' }],
+    ['meta', { name: 'format-detection', content: 'telephone=no' }],
     ['link', { rel: 'shortcut icon', type: 'image/x-icon', href: './favicon.ico' }],
     ['link', { rel: 'apple-touch-icon-precomposed', href: './apple-touch-icon.png' }]
   ],
   locales: {
     '/': {
-      lang: 'ja',
-      title: 'はじめてのVuePress',
-      description: 'VuePressを使用したサイトです。',
-      head: [
-        ['meta', { property: 'og:locale', content: 'ja_JP' }],
-        ['meta', { property: 'og:title', content: 'はじめてのVuePress' }],
-        ['meta', { property: 'og:description', content: 'VuePressを使用したサイトです。' }],
-        ['meta', { property: 'og:type', content: 'website' }],
-        ['meta', { property: 'og:url', content: 'http://localhost:3000' }],
-        ['meta', { property: 'og:image', content: 'http://localhost:3000/og.png' }],
-        ['meta', { property: 'og:image:secure_url', content: 'http://localhost:3000/og.png' }],
-        ['meta', { property: 'og:site_name', content: 'はじめてのVuePress' }],
-        ['meta', { name: 'twitter:card', content: 'summary_large_image' }]
-      ]
-    },
-    '/en/': {
-      lang: 'en',
-      title: 'First time VuePress',
-      description: 'The site using VuePress.',
-      head: [
-        ['meta', { property: 'og:locale', content: 'ja_JP' }],
-        ['meta', { property: 'og:title', content: 'First time VuePress' }],
-        ['meta', { property: 'og:description', content: 'The site using VuePress.' }],
-        ['meta', { property: 'og:type', content: 'website' }],
-        ['meta', { property: 'og:url', content: 'http://localhost:3000' }],
-        ['meta', { property: 'og:image', content: 'http://localhost:3000/og.png' }],
-        ['meta', { property: 'og:image:secure_url', content: 'http://localhost:3000/og.png' }],
-        ['meta', { property: 'og:site_name', content: 'First time VuePress' }],
-        ['meta', { name: 'twitter:card', content: 'summary_large_image' }]
-      ]
+      lang: 'ja'
     }
   },
   shouldPrefetch: () => {
@@ -61,7 +39,11 @@ module.exports = {
   stylus: {
     import: [path.resolve(__dirname, './styles/global.styl')]
   },
-  plugins: [['@vuepress/google-analytics', { ga: 'UA-00000000-0' }]],
+  plugins: {
+    '@vuepress/google-analytics': { ga: 'UA-00000000-0' }
+    // 'vuepress-plugin-seo': seoOptions,
+    // 'vuepress-plugin-sitemap': { hostname: sitePath }
+  },
   configureWebpack: (config, isServer) => {
     config.resolve.alias['@components'] = path.resolve(__dirname, './components')
     config.resolve.alias['@public'] = path.resolve(__dirname, './public')
@@ -97,13 +79,6 @@ module.exports = {
       .test(/\.(glsl|vs|fs|vert|frag)$/)
       .use('webpack-glsl-loader')
       .loader('webpack-glsl-loader')
-      .end()
-    // svg-sprite
-    const svgRule = config.module.rule('svg')
-    svgRule.uses.delete('file-loader')
-    svgRule
-      .use('svg-inline-loader')
-      .loader('svg-inline-loader')
       .end()
     // optimize
     if (process.env.NODE_ENV === 'production' && !isServer) {

@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "description": "vuepress v1.x development environment",
   "scripts": {
-    "lint": "eslint --ext .js,.vue src --fix",
-    "svgsprite": "./scripts/create_svgsprite.sh",
     "dev": "vuepress dev src",
     "build": "vuepress build src",
     "preview": "http-server ./build/"
@@ -15,22 +13,23 @@
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
     "ress": "^2.0.1",
-    "vuepress": "^1.1.0",
+    "vuepress": "^1.2.0",
     "vuex": "^3.1.1",
     "webpack-glsl-loader": "^1.0.1"
   },
   "devDependencies": {
-    "@vuepress/plugin-google-analytics": "^1.1.0",
+    "@goy/vuepress-plugin-svg-icons": "^4.0.0",
+    "@vuepress/plugin-google-analytics": "^1.2.0",
     "babel-eslint": "^10.0.3",
-    "eslint": "^6.5.1",
-    "eslint-config-prettier": "^6.3.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.2.3",
     "http-server": "^0.11.1",
     "prettier": "^1.18.2",
     "prettier-eslint": "^9.0.0",
-    "svg-inline-loader": "^0.8.0",
-    "svg-sprite": "^1.5.0"
+    "vuepress-plugin-seo": "^0.1.2",
+    "vuepress-plugin-sitemap": "^2.3.0"
   },
   "browserslist": [
     "last 2 version",
