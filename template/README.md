@@ -29,7 +29,7 @@ vuepress v1.x系を使った、静的サイトをつくるときのテンプレ�
    以下のpluginをデフォルトでインストールしています。
    
    - [@goy/vuepress-plugin-svg-icons](https://vp-icon.goyfe.com/guide/)<br>
-   svg-sprite-iconを使用できるようにするプラグインです。詳細はリンク先へ。
+   svg-sprite-iconを使用できるようにするプラグインです。詳細はリンク先へ。<br>
    ※エイリアスコマンドでsvgoを実行できるのですが、`src/.vuepress/config.js`内のplugins箇所でこのプラグインが適用されてないといけないので注意！
 
    - [@vuepress/plugin-google-analytics](https://v1.vuepress.vuejs.org/plugin/official/plugin-google-analytics.html)<br>
