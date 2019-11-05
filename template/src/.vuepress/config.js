@@ -1,13 +1,19 @@
+const env = process.env.NODE_ENV || 'development'
+
 const path = require('path')
 const webpack = require('webpack')
 const TerserPlugin = require('terser-webpack-plugin')
 
-const sitePath = 'http://localhost:3000'
-// const seoOptions = require('./config-files/seo-options')
+const seoOptions = require('./config-files/seo-options')
+const sitePath = {
+  development: 'http://localhost:3000',
+  staging: '',
+  production: ''
+}
 
 module.exports = {
   themeConfig: {
-    domain: sitePath
+    domain: sitePath[env]
   },
   base: '/',
   title: 'はじめてのVuePress',
@@ -40,9 +46,10 @@ module.exports = {
     import: [path.resolve(__dirname, './styles/global.styl')]
   },
   plugins: {
-    '@vuepress/google-analytics': { ga: 'UA-00000000-0' }
-    // 'vuepress-plugin-seo': seoOptions,
-    // 'vuepress-plugin-sitemap': { hostname: sitePath }
+    '@vuepress/google-analytics': { ga: 'UA-00000000-0' },
+    'vuepress-plugin-seo': seoOptions,
+    // 'vuepress-plugin-sitemap': { hostname: sitePath[env] },
+    // '@goy/svg-icons': { svgsDir: 'svgs' }
   },
   configureWebpack: (config, isServer) => {
     config.resolve.alias['@components'] = path.resolve(__dirname, './components')

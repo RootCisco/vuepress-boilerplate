@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "vuepress v1.x development environment",
   "scripts": {
+    "svgo": "vuepress svgo src",
     "dev": "vuepress dev src",
     "build": "vuepress build src",
     "preview": "http-server ./build/"
