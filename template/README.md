@@ -1,5 +1,5 @@
-# VuePress Boilerplate - vupress v1.x
-vuepress v1.x系を使った、静的サイトをつくるときのテンプレート。
+# vuepress(v1.x) template
+> vuepress v1.x系を使った、静的サイトをつくるときのテンプレート。
 
 ## Require
       node LTS version (v8.x, v10.x, v12.x)

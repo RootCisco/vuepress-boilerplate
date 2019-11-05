@@ -1,4 +1,4 @@
-# vuepress(v1.x) boilerplate
+# VuePress(v1.x) Boilerplate
 > vuepress starter template for web site.
 
 ## Preparation
