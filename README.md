@@ -2,7 +2,7 @@
 > vuepress starter template for web site.
 
 ## Preparation
-vue-cliを使ってダウンロードできるようになっているのでもしなかったらグローバルインストールしてください。
+vue-cliを使ってダウンロードできるようになっているのでもしなかったらグローバルインストールしてください。<br>
 (普段通りにクローン、ダウンロードでもいいです)
 
       $ npm i -g @vue/cli @vue/cli-init
