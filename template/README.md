@@ -28,7 +28,7 @@
 6. vuepressプラグインについて<br>
    以下のpluginをデフォルトでインストールしています。<br>
    基本コメントアウトして適用しないようにしているので、必要であれば使ってください。
-   
+
    - [@goy/vuepress-plugin-svg-icons](https://vp-icon.goyfe.com/guide/)<br>
    svg-sprite-iconを使用できるようにするプラグインです。詳細はリンク先へ。<br>
    ※エイリアスコマンドでsvgoを実行できるのですが、`src/.vuepress/config.js`内のplugins箇所でこのプラグインが適用されてないといけないので注意！
@@ -40,7 +40,8 @@
    サイトマップジェネレータープラグインです(念の為入れておく)。詳細はリンク先へ。
 
 7. seo関連のmetaタグについて<br>
-   [LPのとき]：`src/.vuepress/config.js`内のhead箇所に追加しとけば良さそう。<br>
+   [LPのとき]：`src/.vuepress/config.js`内のhead箇所に追加しとけば良さそう。
+
    [複数ページサイト]：各ページの`*.md`ファイルにFrontmatterで追加する感じでいいかも。
 
 ## License
