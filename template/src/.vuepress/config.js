@@ -46,8 +46,7 @@ module.exports = {
     import: [path.resolve(__dirname, './styles/global.styl')]
   },
   plugins: {
-    '@vuepress/google-analytics': { ga: 'UA-00000000-0' },
-    'vuepress-plugin-seo': seoOptions,
+    // '@vuepress/google-analytics': { ga: 'UA-00000000-0' },
     // 'vuepress-plugin-sitemap': { hostname: sitePath[env] },
     // '@goy/svg-icons': { svgsDir: 'svgs' }
   },

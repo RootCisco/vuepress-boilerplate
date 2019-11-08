@@ -26,7 +26,8 @@
    ※vscodeプラグインをインストールして適用する必要があります！
 
 6. vuepressプラグインについて<br>
-   以下のpluginをデフォルトでインストールしています。
+   以下のpluginをデフォルトでインストールしています。<br>
+   基本コメントアウトして適用しないようにしているので、必要であれば使ってください。
    
    - [@goy/vuepress-plugin-svg-icons](https://vp-icon.goyfe.com/guide/)<br>
    svg-sprite-iconを使用できるようにするプラグインです。詳細はリンク先へ。<br>
@@ -35,11 +36,12 @@
    - [@vuepress/plugin-google-analytics](https://v1.vuepress.vuejs.org/plugin/official/plugin-google-analytics.html)<br>
    vuepress公式のプラグインです。詳細はリンク先へ。
 
-   - [vuepress-plugin-seo](https://github.com/lorisleiva/vuepress-plugin-seo)<br>
-   seo関連のmetaタグ設定ができるプラグインです。オプションは`src/.vuepress/config-files/seo-options.js`に記述しているので必要なら適宜変更してください。
-
    - [vuepress-plugin-sitemap](https://github.com/ekoeryanto/vuepress-plugin-sitemap)<br>
-   サイトマップジェネレータープラグインです。詳細はリンク先へ。
+   サイトマップジェネレータープラグインです(念の為入れておく)。詳細はリンク先へ。
+
+7. seo関連のmetaタグについて<br>
+   LPのとき：`src/.vuepress/config.js`内のhead箇所に追加しとけば良さそう。
+   複数ページサイト：各ページの`*.md`ファイルにFrontmatterで追加する感じでいいかも。
 
 ## License
 [MIT License](https://github.com/RootCisco/vuepress-boilerplate/blob/master/LICENSE)
