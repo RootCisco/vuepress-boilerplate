@@ -40,8 +40,8 @@
    サイトマップジェネレータープラグインです(念の為入れておく)。詳細はリンク先へ。
 
 7. seo関連のmetaタグについて<br>
-   LPのとき：`src/.vuepress/config.js`内のhead箇所に追加しとけば良さそう。
-   複数ページサイト：各ページの`*.md`ファイルにFrontmatterで追加する感じでいいかも。
+   [LPのとき]：`src/.vuepress/config.js`内のhead箇所に追加しとけば良さそう。<br>
+   [複数ページサイト]：各ページの`*.md`ファイルにFrontmatterで追加する感じでいいかも。
 
 ## License
 [MIT License](https://github.com/RootCisco/vuepress-boilerplate/blob/master/LICENSE)
