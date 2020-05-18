@@ -1,10 +1,7 @@
 const env = process.env.NODE_ENV || 'development'
-
 const path = require('path')
 const webpack = require('webpack')
 const TerserPlugin = require('terser-webpack-plugin')
-
-const seoOptions = require('./config-files/seo-options')
 const sitePath = {
   development: 'http://localhost:3000',
   staging: '',
@@ -21,9 +18,17 @@ module.exports = {
   port: '3000',
   dest: 'build',
   head: [
-    ['meta', { name: 'keywords', content: 'vue, vuepress' }],
     ['meta', { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' }],
-    ['meta', { name: 'format-detection', content: 'telephone=no' }],
+    ['meta', { name: 'keywords', content: 'vue, vuepress' }],
+    ['meta', { property: 'og:locale', content: 'ja_JP' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: '' }],
+    ['meta', { property: 'og:title', content: '' }],
+    ['meta', { property: 'og:description', content: '' }],
+    ['meta', { property: 'og:url', content: '' }],
+    ['meta', { property: 'og:image', content: '' }],
+    ['meta', { property: 'og:image:secure_url', content: '' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['link', { rel: 'shortcut icon', type: 'image/x-icon', href: './favicon.ico' }],
     ['link', { rel: 'apple-touch-icon-precomposed', href: './apple-touch-icon.png' }]
   ],
@@ -48,7 +53,7 @@ module.exports = {
   plugins: {
     // '@vuepress/google-analytics': { ga: 'UA-00000000-0' },
     // 'vuepress-plugin-sitemap': { hostname: sitePath[env] },
-    // '@goy/svg-icons': { svgsDir: 'svgs' }
+    '@goy/svg-icons': { svgsDir: 'svgs' }
   },
   configureWebpack: (config, isServer) => {
     config.resolve.alias['@components'] = path.resolve(__dirname, './components')
