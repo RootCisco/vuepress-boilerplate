@@ -1,5 +1,5 @@
-import store from './enhance-files/store'
-import setRouter from './enhance-files/router'
+import store from './enhance-files/store';
+import setRouter from './enhance-files/router';
 // import axios from 'axios'
 
 // const baseUrl = 'http://localhost:1337/tests'
@@ -16,7 +16,7 @@ import setRouter from './enhance-files/router'
 export default ({ Vue, options, router, siteData }) => {
   // Vue.prototype.$http = axiosBase()
 
-  Vue.mixin({ store: store })
+  Vue.mixin({ store: store });
 
-  setRouter(router)
-}
+  setRouter(router);
+};

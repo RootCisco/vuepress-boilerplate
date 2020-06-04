@@ -1,12 +1,12 @@
-const env = process.env.NODE_ENV || 'development'
-const path = require('path')
-const webpack = require('webpack')
-const TerserPlugin = require('terser-webpack-plugin')
+const env = process.env.NODE_ENV || 'development';
+const path = require('path');
+const webpack = require('webpack');
+const TerserPlugin = require('terser-webpack-plugin');
 const sitePath = {
   development: 'http://localhost:3000',
   staging: '',
   production: ''
-}
+};
 
 module.exports = {
   themeConfig: {
@@ -38,7 +38,7 @@ module.exports = {
     }
   },
   shouldPrefetch: () => {
-    return false
+    return false;
   },
   postcss: {
     plugins: [
@@ -52,13 +52,12 @@ module.exports = {
   },
   plugins: {
     // '@vuepress/google-analytics': { ga: 'UA-00000000-0' },
-    // 'vuepress-plugin-sitemap': { hostname: sitePath[env] },
     '@goy/svg-icons': { svgsDir: 'svgs' }
   },
   configureWebpack: (config, isServer) => {
-    config.resolve.alias['@components'] = path.resolve(__dirname, './components')
-    config.resolve.alias['@public'] = path.resolve(__dirname, './public')
-    config.resolve.alias['@assets'] = path.resolve(__dirname, '../assets')
+    config.resolve.alias['@components'] = path.resolve(__dirname, './components');
+    config.resolve.alias['@public'] = path.resolve(__dirname, './public');
+    config.resolve.alias['@assets'] = path.resolve(__dirname, '../assets');
 
     if (config.mode === 'production' && !isServer) {
       config.optimization.minimizer = [
@@ -80,21 +79,22 @@ module.exports = {
             ie8: true
           }
         })
-      ]
+      ];
     }
   },
   chainWebpack: (config, isServer) => {
     // glsl
-    config.module
-      .rule('glsl')
-      .test(/\.(glsl|vs|fs|vert|frag)$/)
-      .use('webpack-glsl-loader')
-      .loader('webpack-glsl-loader')
-      .end()
+    // config.module
+    //   .rule('glsl')
+    //   .test(/\.(glsl|vs|fs|vert|frag)$/)
+    //   .use('webpack-glsl-loader')
+    //   .loader('webpack-glsl-loader')
+    //   .end();
+
     // optimize
     if (process.env.NODE_ENV === 'production' && !isServer) {
-      config.plugin('aggressive-merging').use(webpack.optimize.AggressiveMergingPlugin)
-      config.plugin('occurrence-order').use(webpack.optimize.OccurrenceOrderPlugin)
+      config.plugin('aggressive-merging').use(webpack.optimize.AggressiveMergingPlugin);
+      config.plugin('occurrence-order').use(webpack.optimize.OccurrenceOrderPlugin);
     }
   }
-}
+};

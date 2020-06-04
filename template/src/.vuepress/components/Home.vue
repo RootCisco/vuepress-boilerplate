@@ -5,21 +5,21 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState } from 'vuex';
 
 export default {
-  props: {},
   components: {},
+  props: {},
+  data() {
+    return {};
+  },
   computed: {
     ...mapState(['currentLang'])
   },
-  methods: {},
-  data() {
-    return {}
-  },
   created() {},
-  mounted() {}
-}
+  mounted() {},
+  methods: {}
+};
 </script>
 
 <style lang="stylus" scoped>
