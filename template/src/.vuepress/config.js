@@ -51,7 +51,9 @@ module.exports = {
     import: [path.resolve(__dirname, './styles/global.styl')]
   },
   plugins: {
-    // '@vuepress/google-analytics': { ga: 'UA-00000000-0' },
+    {{#isUseAnalytics}}
+    '@vuepress/google-analytics': { ga: 'UA-00000000-0' },
+    {{/isUseAnalytics}}
     '@goy/svg-icons': { svgsDir: 'svgs' }
   },
   configureWebpack: (config, isServer) => {
@@ -83,13 +85,15 @@ module.exports = {
     }
   },
   chainWebpack: (config, isServer) => {
+    {{#isUseGlsl}}
     // glsl
-    // config.module
-    //   .rule('glsl')
-    //   .test(/\.(glsl|vs|fs|vert|frag)$/)
-    //   .use('webpack-glsl-loader')
-    //   .loader('webpack-glsl-loader')
-    //   .end();
+    config.module
+      .rule('glsl')
+      .test(/\.(glsl|vs|fs|vert|frag)$/)
+      .use('webpack-glsl-loader')
+      .loader('webpack-glsl-loader')
+      .end();
+    {{/isUseGlsl}}
 
     // optimize
     if (process.env.NODE_ENV === 'production' && !isServer) {
