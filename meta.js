@@ -35,6 +35,6 @@ module.exports = {
       console.log(`  cd ${data.destDirName}`);
     }
     console.log("  yarn install");
-    console.log("  yarn start");
+    console.log("  yarn dev");
   },
 };
