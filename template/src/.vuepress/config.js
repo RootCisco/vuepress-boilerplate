@@ -93,8 +93,8 @@ module.exports = {
       .use('webpack-glsl-loader')
       .loader('webpack-glsl-loader')
       .end();
-    {{/isUseGlsl}}
 
+    {{/isUseGlsl}}
     // optimize
     if (process.env.NODE_ENV === 'production' && !isServer) {
       config.plugin('aggressive-merging').use(webpack.optimize.AggressiveMergingPlugin);
