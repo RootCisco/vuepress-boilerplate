@@ -1,4 +1,5 @@
 {
+  "root": true,
   "env": {
     "browser": true,
     "node": true,
@@ -27,12 +28,13 @@
       {
         "printWidth": 150,
         "singleQuote": true,
-        "semi": false,
+        "trailingComma": "none",
+        "arrowParens": "always",
         "htmlWhitespaceSensitivity": "ignore"
       }
     ],
     "comma-dangle": [1, "never"],
-    "no-console": 0,
+    "no-console": 1,
     "eol-last": 0,
     "block-scoped-var": 0,
     "complexity": 1,
@@ -49,7 +51,7 @@
     "no-self-compare": 1,
     "no-void": 2,
     "no-var": 2,
-    "camelcase": [2, { "properties": "always" }],
+    "camelcase": [1, { "properties": "always" }],
     "no-array-constructor": 1,
     "quotes": [0, "single"],
     "no-unused-vars": 1,
