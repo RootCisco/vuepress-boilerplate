@@ -26,22 +26,18 @@ vue-cli を使ってダウンロードできるようになっているので、
 
 3. autoplefixer, @babel/preset-env のお気持ち程度に設定しています。browserslist は package.json に含めているので必要なら適宜変更してください。
 
-4. prettier, eslint も一応入れていて、vscode 限定で`*.vue, *.js, *.styl`を保存時などにオートフォーマットします。<br>
+4. prettier, eslint も一応入れていて、vscode 限定で`*.vue, *.js, *.styl`を保存時などにオートフォーマットします。
    > VSCodeプラグインをインストールして適用する必要があります！<br>
    > extensions.json 置いてあるので VSCode 上でアテンション出ると思います<br>
    > (VSCodeのPrettier拡張なくてもいいです。すでに入っていても問題ないようにはしてます)
-   
-<br>
 
 5. VuePress プラグインについて<br>
    以下の plugin をデフォルトでインストールするようにしています。<br>
    基本コメントアウトして適用しないようにしているので、必要であれば使ってください。
 
    - [@goy/vuepress-plugin-svg-icons](https://vp-icon.goyfe.com/guide/)（デフォルトで有効）<br>
-     svg-sprite-icon を使用できるようにするプラグインです。詳細はリンク先へ。<br>
+     svg-sprite-icon を使用できるようにするプラグインです。詳細はリンク先へ。
      > `yarn svgo`で svgo を実行できるのですが、`src/.vuepress/config.js`内の plugins 箇所でこのプラグインが適用されてないといけないので注意！
-
-   <br>
 
    - [@vuepress/plugin-google-analytics](https://v1.vuepress.vuejs.org/plugin/official/plugin-google-analytics.html)<br>
      インストール時にプロンプトで必要かどうか聞かれるので "Y/n" で答えてください。<br>
