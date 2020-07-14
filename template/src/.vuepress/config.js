@@ -18,6 +18,8 @@ module.exports = {
   port: '3000',
   dest: 'build',
   head: [
+    ['meta', { charset: 'utf-8' }],
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0' }],
     ['meta', { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' }],
     ['meta', { name: 'keywords', content: 'vue, vuepress' }],
     ['meta', { property: 'og:locale', content: 'ja_JP' }],
@@ -29,8 +31,8 @@ module.exports = {
     ['meta', { property: 'og:image', content: '' }],
     ['meta', { property: 'og:image:secure_url', content: '' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['link', { rel: 'shortcut icon', type: 'image/x-icon', href: './favicon.ico' }],
-    ['link', { rel: 'apple-touch-icon-precomposed', href: './apple-touch-icon.png' }]
+    ['link', { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    ['link', { rel: 'apple-touch-icon-precomposed', href: '/apple-touch-icon.png' }]
   ],
   locales: {
     '/': {
