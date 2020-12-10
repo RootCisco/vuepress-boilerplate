@@ -1,5 +1,6 @@
 ## v0.1.2 (2020/12/10)
 - package update.
+- vuepressのホットリロードバグが直ってるみたいなので、packageからwatchpackを削除。
 
 ## v0.1.1 (2020/07/14)
 - VuePressのバグで、metaの`charset`, `viewport`が消されるみたいなので、config.jsのheadに追記して対応しておく。
