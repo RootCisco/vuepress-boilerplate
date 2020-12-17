@@ -55,7 +55,7 @@ vue-cli を使ってダウンロードできるようになっているので、
     （たぶんフォルダと`*.vue, *.js`くらいまでしか候補に出してくれない？っぽい...）
 
     [追加手順]
-    - `./src/.vuepress/config.js`のwebpack ailiasに任意のパスを追加する。
+    - `./src/.vuepress/config.js`のwebpack aliasに任意のパスを追加する。
     - ailiasにそって`jsconfig.json`のcompilerOptions pathsにパスを追加。
 
 ## License
