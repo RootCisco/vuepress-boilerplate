@@ -1,3 +1,7 @@
+## v0.1.3 (2020/12/17)
+- @public, @assets の alias は、ほぼ使わないので削除。
+- add jsconfig.json for vetur in vscode.
+
 ## v0.1.2 (2020/12/10)
 - package update.
 - vuepressのホットリロードバグが直ってるみたいなので、packageからwatchpackを削除。
