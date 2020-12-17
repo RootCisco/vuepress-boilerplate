@@ -60,8 +60,6 @@ module.exports = {
   },
   configureWebpack: (config, isServer) => {
     config.resolve.alias['@components'] = path.resolve(__dirname, './components');
-    config.resolve.alias['@public'] = path.resolve(__dirname, './public');
-    config.resolve.alias['@assets'] = path.resolve(__dirname, '../assets');
 
     if (config.mode === 'production' && !isServer) {
       config.optimization.minimizer = [
