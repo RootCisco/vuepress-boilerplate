@@ -50,6 +50,14 @@ vue-cli を使ってダウンロードできるようになっているので、
 
    [複数ページサイト]：各ページの`*.md`ファイルに Frontmatter で追加する感じでいいかも。
 
+8. vetur の path mapping について<br>
+    `./src/*`, `./src/.vuepress/*`, `./src/.vuepress/components/*`,以下のものをデフォルトとして登録している。<br>
+    （たぶんフォルダと`*.vue, *.js`くらいまでしか候補に出してくれない？っぽい...）
+
+    [追加手順]
+    - `./src/.vuepress/config.js`のwebpack ailiasに任意のパスを追加する。
+    - ailiasにそって`jsconfig.json`のcompilerOptions pathsにパスを追加。
+
 ## License
 
 [MIT License](https://github.com/RootCisco/vuepress-boilerplate/blob/master/LICENSE)
