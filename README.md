@@ -57,6 +57,12 @@ vue-cli を使ってダウンロードできるようになっているので、
     - `./src/.vuepress/config.js`のwebpack aliasに任意のパスを追加する。
     - ailiasにそって`jsconfig.json`のcompilerOptions pathsにパスを追加。
 
+9. `jsconfig.json` で ts syntax error でたときの対処法<br>
+    VSCode の BuildIn の TypeScript プラグインがなんか悪さしてるっぽいのはわかった。
+
+    - VSCode を再起動してみる。（キャッシュの可能性）
+    - なにかコードファイル開いている状態で、コマンドパレットから`TypeScript : Restart TS server` を実行してみる。
+
 ## License
 
 [MIT License](https://github.com/RootCisco/vuepress-boilerplate/blob/master/LICENSE)
