@@ -1,5 +1,8 @@
 {
-  "include": ["./src/**/*"],
+  "include": [
+    "./src/**/*",
+    "./src/.vuepress/**/*"
+  ],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
