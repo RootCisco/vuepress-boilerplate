@@ -19,20 +19,11 @@
   "extends": [
     "eslint:recommended",
     "plugin:vue/recommended",
-    "plugin:prettier/recommended"
+    "prettier",
+    "prettier/vue"
   ],
-  "plugins": ["prettier", "vue"],
+  "plugins": ["vue"],
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "printWidth": 150,
-        "singleQuote": true,
-        "trailingComma": "none",
-        "arrowParens": "always",
-        "htmlWhitespaceSensitivity": "ignore"
-      }
-    ],
     "comma-dangle": [1, "never"],
     "no-console": 1,
     "eol-last": 0,

@@ -1,5 +1,5 @@
-import store from './enhance-files/store';
 import setRouter from './enhance-files/router';
+import store from './enhance-files/store';
 // import axios from 'axios'
 
 // const baseUrl = 'http://localhost:1337/tests'
