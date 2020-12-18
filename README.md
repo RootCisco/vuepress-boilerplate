@@ -22,7 +22,7 @@ vue-cli を使ってダウンロードできるようになっているので、
 
 1. pug 記法使えます。
 
-2. [ress (modern reset css) ](https://github.com/filipelinhares/ress)でブラウザ CSS をリセットさせてます。
+2. [ress (modern reset css)](https://github.com/filipelinhares/ress)でブラウザ CSS をリセットさせてます。
 
 3. autoplefixer, @babel/preset-env のお気持ち程度に設定しています。browserslist は package.json に含めているので必要なら適宜変更してください。
 
