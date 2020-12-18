@@ -2,7 +2,7 @@
 .theme-container
   Header
   h1 HogeHoge
-  Content(:custom="false")
+  Content(:custom='false')
   Footer
 </template>
 

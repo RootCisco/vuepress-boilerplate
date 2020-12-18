@@ -1,6 +1,6 @@
 <template lang="pug">
 .home
-  p {{currentLang}}
+  p {{ currentLang }}
   p ホームです。
 </template>
 
