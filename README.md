@@ -28,8 +28,7 @@ vue-cli を使ってダウンロードできるようになっているので、
 
 4. prettier, eslint も一応入れていて、vscode 限定で`*.vue, *.js, *.styl`を保存時などにオートフォーマットします。
    > VSCodeプラグインをインストールして適用する必要があります！<br>
-   > extensions.json 置いてあるので VSCode 上でアテンション出ると思います<br>
-   > (VSCodeのPrettier拡張なくてもいいです。すでに入っていても問題ないようにはしてます)
+   > extensions.json 置いてあるので VSCode 上でアテンション出ると思います
 
 5. VuePress プラグインについて<br>
    以下の plugin をデフォルトでインストールするようにしています。<br>
