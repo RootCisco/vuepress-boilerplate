@@ -1,6 +1,7 @@
 ## v0.1.4 (2020/12/18)
 - `eslint-plugin-prettier` を使った prettier 連携は公式で非推奨となったみたいなので削除。
 - eslint, prettier 関連の設定を再調整。
+- jsconfig.json でなぜか ts syntax error がでるので、typescript validatte をいまいま無効化する。
 
 ## v0.1.3 (2020/12/17)
 - @public, @assets の alias は、ほぼ使わないので削除。
