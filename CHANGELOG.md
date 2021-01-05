@@ -1,3 +1,12 @@
+# Change Log
+All notable changes to this project will be documented in this file.
+
+## v0.1.5 (2021/1/5)
+
+- `ssr.html` テンプレート内を一部vuepress最新のものと合わせる。
+- `config.js` meta周りを調整。
+- 用意してる初期スタイルの調整。
+
 ## v0.1.4 (2020/12/18)
 
 - `eslint-plugin-prettier` を使った prettier 連携は公式で非推奨となったみたいなので削除。
