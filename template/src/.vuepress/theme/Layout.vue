@@ -19,23 +19,12 @@ export default {
     return {};
   },
   computed: {},
-  created() {
-    if (this.$ssrContext) {
-      // canonical
-      this.$ssrContext.userHeadTags += `<link rel='canonical' href='${this.computeURL()}'>`;
-    }
-  },
+  created() {},
   mounted() {
     console.log(this.$site);
   },
   beforeDestroy() {},
-  methods: {
-    computeURL() {
-      let baseURL = this.$site.themeConfig.domain;
-      let pagePath = this.$page.path.replace(/\.html$/, '');
-      return baseURL + pagePath;
-    }
-  }
+  methods: {}
 };
 </script>
 
