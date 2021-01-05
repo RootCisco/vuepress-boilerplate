@@ -3,10 +3,19 @@ get_vw($size, $viewport = 375)
   $rate = (100 / $viewport)
   return $rate * $size * 1vw
 
+get_vh($size, $viewport = 812)
+  $rate = (100 / $viewport)
+  return $rate * $size * 1vh
+
 // font-size vw
 fz_vw($font_size = 10, $view = 375)
   font-size: $font_size * 1px
   font-size: get_vw($font_size, $view)
+
+// font-size vh
+fz_vh($font_size = 10, $view = 812)
+  font-size: $font_size * 1px
+  font-size: get_vh($font_size, $view)
 
 // breakpoint
 breakpoint(targets)
