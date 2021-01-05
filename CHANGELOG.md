@@ -1,3 +1,6 @@
+# Change Log
+All notable changes to this project will be documented in this file.
+
 ## v0.1.5 (2021/1/5)
 
 - `ssr.html` テンプレート内を一部vuepress最新のものと合わせる。
