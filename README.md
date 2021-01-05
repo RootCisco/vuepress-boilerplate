@@ -63,6 +63,10 @@ vue-cli を使ってダウンロードできるようになっているので、
     - VSCode を再起動してみる。（キャッシュの可能性）
     - なにかコードファイル開いている状態で、コマンドパレットから`TypeScript : Restart TS server` を実行してみる。
 
+10. canonical url について<br>
+    `1.7.1+` から Frontmatter で `canonicalURL` の設定が追加されたみたい。<br>
+    なにか特別なことしない限りは `.md` ファイルに記述する方針で良さそう。
+
 ## License
 
 [MIT License](https://github.com/RootCisco/vuepress-boilerplate/blob/master/LICENSE)
