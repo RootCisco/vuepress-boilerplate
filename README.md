@@ -13,7 +13,7 @@ vue-cli を使ってダウンロードできるようになっているので、
 
 ## Usage
 
-      $ vue init RootCisco/vuepress-boilerplate {my_project_name}
+      $ vue init ciscoxas/vuepress-boilerplate {my_project_name}
       $ cd {my_project_name}
       $ yarn install
       $ yarn dev
