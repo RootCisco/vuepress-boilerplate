@@ -14,17 +14,17 @@
     "pug": "^3.0.0",
     "pug-plain-loader": "^1.1.0",
     "ress": "^3.0.0",
-    "vuepress": "^1.7.1",
-    "vuex": "^3.6.0"{{#isUseGlsl}},
+    "vuepress": "^1.8.2",
+    "vuex": "^3.6.2"{{#isUseGlsl}},
     "webpack-glsl-loader": "^1.0.1"{{/isUseGlsl}}
   },
   "devDependencies": {
-    "@goy/vuepress-plugin-svg-icons": "^4.2.1",{{#isUseAnalytics}}
-    "@vuepress/plugin-google-analytics": "^1.7.1",{{/isUseAnalytics}}
+    "@goy/vuepress-plugin-svg-icons": "^4.2.3",{{#isUseAnalytics}}
+    "@vuepress/plugin-google-analytics": "^1.8.2",{{/isUseAnalytics}}
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.15.0",
-    "eslint-config-prettier": "^7.0.0",
-    "eslint-plugin-vue": "^7.2.0",
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-vue": "^7.6.0",
     "http-server": "^0.12.3",
     "prettier": "^2.2.1"
   },
