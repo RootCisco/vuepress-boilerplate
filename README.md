@@ -25,7 +25,7 @@ vue-cli を使ってダウンロードできるようになっているので、
 >
 > **If your project is using webpack 3.x, you may notice some installation issues with npm. In this case, we recommend using Yarn.*
 >
-> refarence by [Getting Started - Prerequisites | VuePress](https://vuepress.vuejs.org/guide/getting-started.html#prerequisites)
+> reference by [Getting Started - Prerequisites | VuePress](https://vuepress.vuejs.org/guide/getting-started.html#prerequisites)
 
 ## Note
 
