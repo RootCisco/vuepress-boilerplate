@@ -42,7 +42,7 @@ module.exports = {
   postcss: {
     plugins: [
       require('autoprefixer')({
-        grid: true
+        grid: 'autoplace'
       })
     ]
   },
