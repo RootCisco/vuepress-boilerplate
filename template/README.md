@@ -2,7 +2,7 @@
 
 > {{description}}
 >
-> vuepress version v1.8.2
+> VuePress version v1.x
 
 ## Prerequisites
 

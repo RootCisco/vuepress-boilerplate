@@ -1,6 +1,8 @@
 # VuePress(v1.x) Boilerplate
 
-> [vuepress](https://vuepress.vuejs.org/) starter template for web site.
+> [VuePress](https://vuepress.vuejs.org/) starter template for web site.
+>
+> VuePress version v1.x
 
 ## Preparation
 
