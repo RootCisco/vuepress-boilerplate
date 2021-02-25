@@ -18,6 +18,15 @@ vue-cli を使ってダウンロードできるようになっているので、
       $ yarn install
       $ yarn dev
 
+**[Prerequisites]**
+
+> - Node.js 10+(opens new window)
+> - Yarn Classic (opens new window)(Optional)
+>
+> **If your project is using webpack 3.x, you may notice some installation issues with npm. In this case, we recommend using Yarn.*
+>
+> refarence by [Getting Started - Prerequisites | VuePress](https://vuepress.vuejs.org/guide/getting-started.html#prerequisites)
+
 ## Note
 
 1. pug 記法使えます。

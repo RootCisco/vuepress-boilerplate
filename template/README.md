@@ -1,18 +1,20 @@
 # {{name}}
 
 > {{description}}
+>
+> vuepress version v1.8.2
 
-## Require
+## Prerequisites
 
-      node LTS version (v8.x, v10.x, v12.x)
-      vuepress v1.5.0
-      vuex v3.4.1
-
-## Installation
-
-      yarn install
+> - Node.js 10+(opens new window)
+> - Yarn Classic (opens new window)(Optional)
+>
+> **If your project is using webpack 3.x, you may notice some installation issues with npm. In this case, we recommend using Yarn.*
+>
+> refarence by [Getting Started - Prerequisites | VuePress](https://vuepress.vuejs.org/guide/getting-started.html#prerequisites)
 
 ## Get strated
 
-      yarn dev  // localhost:3000立ち上げ
-      yarn build  // buildディレクトリ出力
+      yarn install
+      yarn dev  // start local dev server to localhost:3000
+      yarn build  // generate files in build/ folder
